@@ -1,0 +1,27 @@
+[Start_Room]
+Description: You are in a small, dimly lit room. A wooden door leads north.
+Exit: north -> Forest
+
+[Forest]
+Description: You stand in a vast forest. Tall trees block most of the sunlight. You hear a river to the east and the room you came from is to the south.
+Exit: south -> Start_Room
+Exit: east -> River
+
+[River]
+Description: A sparkling river flows here. The water is cool and clear. A path leads west back into the forest, and a bridge leads north.
+Exit: west -> Forest
+Exit: north -> Cave_Entrance
+
+[Cave_Entrance]
+Description: You are at the mouth of a dark cave. It looks ominous. The bridge back to the river is to the south.
+Exit: south -> River
+Exit: enter -> Dark_Cave
+
+[Dark_Cave]
+Description: It is pitch black here. You can't see anything, but you feel a cold breeze from the north.
+Exit: north -> Treasure_Room
+Exit: south -> Cave_Entrance
+
+[Treasure_Room]
+Description: You found the treasure room! Gold and jewels are everywhere. Congratulations, you've reached the end of the adventure!
+Exit: south -> Dark_Cave
